@@ -1,11 +1,12 @@
-
+/* Base styles */
 body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #0ad4ef; /* Light blue background */
+    background-color: #0ad4ef;
 }
 
+/* Logo styles */
 .logo-wrapper {
     display: flex;
     justify-content: center;
@@ -110,6 +111,38 @@ body, html {
     100% { transform: translateY(0); }
 }
 
+/* Navigation styles */
+nav {
+    background-color: #b71de6;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FDCA40;
+}
+
+/* Content styles */
 .content {
     max-width: 1200px;
     margin: 0 auto;
@@ -165,4 +198,80 @@ button {
 
 button:hover {
     background-color: #28A89D;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .logo-container {
+        width: 300px;
+        height: 90px;
+    }
+
+    .plate {
+        width: 280px;
+        height: 75px;
+    }
+
+    .main-text {
+        font-size: 22px;
+        top: 20px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        top: 50px;
+    }
+
+    .noodle {
+        width: 300px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .image-gallery img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo-container {
+        width: 250px;
+        height: 75px;
+    }
+
+    .plate {
+        width: 230px;
+        height: 60px;
+    }
+
+    .main-text {
+        font-size: 18px;
+        top: 15px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+        top: 40px;
+    }
+
+    .noodle {
+        width: 250px;
+    }
+
+    .fork {
+        display: none;
+    }
 }
