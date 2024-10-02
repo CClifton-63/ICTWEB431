@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beef Stroganoff Enthusiast's Page</title>
+    <style type="text/css">
+        /* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0ad4ef;
+}
+
+/* Logo styles */
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #b71de6;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+    width: 400px;
+    height: 120px;
+    position: relative;
+    font-family: 'Arial Black', sans-serif;
+    overflow: visible;
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.logo-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.plate {
+    width: 380px;
+    height: 100px;
+    background-color: #FFF;
+    border-radius: 15px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
+}
+.text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #2EC4B6;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-text {
+    top: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    top: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FF9F1C;
+}
+
+
+@keyframes sizzle {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-2px); }
+    100% { transform: translateY(0); }
+}
+
+/* Navigation styles */
+nav {
+    background-color: blue;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FDCA40;
+}
+
+/* Content styles */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #FFF;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2EC4B6;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex ;
+    flex-direction: column;
+}
+
+input, textarea {
+    resize: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #2EC4B6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #28A89D;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .logo-container {
+        width: 300px;
+        height: 90px;
+    }
+
+    .plate {
+        width: 280px;
+        height: 75px;
+    }
+
+    .main-text {
+        font-size: 22px;
+        top: 20px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        top: 50px;
+    }
+
+    .noodle {
+        width: 300px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .image-gallery img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo-container {
+        width: 250px;
+        height: 75px;
+    }
+
+    .plate {
+        width: 230px;
+        height: 60px;
+    }
+
+    .main-text {
+        font-size: 18px;
+        top: 15px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+        top: 40px;
+    }
+}
+/* Footer styles */
+footer {
+    background-color: #b71de6;
+    color: white;
+    text-align: center; /* Center the text */
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Ensure the text inside the footer-content is centered */
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Beef Stroganoff Enthusiast's Page</h1>
+        <div class="logo-wrapper">
+            <div class="logo-container">
+                <div class="plate"></div>
+                <div class="text main-text">Beef Stroganoff</div>
+                <div class="text subtitle">Enthusiast's</div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#recipe">Recipe</a></li>
+                <li><a href="#images">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to the Beef Stroganoff Enthusiast's page! We're passionate about all things Stroganoff and love sharing our recipes, tips, and experiences with fellow enthusiasts. Our community celebrates the rich history and delicious variations of this classic dish.</p>
+        </section>
+        <section id="recipe">
+            <h2>Recipe</h2>
+            <h3>Classic Beef Stroganoff</h3>
+            <h4>Ingredients:</h4>
+            <ul>
+                <li>600g beef rump steak, sliced thinly</li>
+                <li>1 onion, sliced</li>
+                <li>300g mushrooms, sliced</li>
+                <li>2 tbsp tomato paste</li>
+                <li>1 cup beef stock</li>
+                <li>1/2 cup sour cream</li>
+                <li>Salt and pepper to taste</li>
+            </ul>
+            <h4>Instructions:</h4>
+            <ol>
+                <li>Brown the beef in a pan, then set aside.</li>
+                <li>Sauté onions and mushrooms in the same pan.</li>
+                <li>Add tomato paste and beef stock, simmer for 10 minutes.</li>
+                <li>Return beef to the pan, add sour cream, and heat through.</li>
+                <li>Season with salt and pepper, serve over noodles.</li>
+            </ol>
+        </section>
+        <section id="images">
+            <h2>Image Gallery</h2>
+            <div class="image-gallery">
+                <img src="Media/1307-beefstrog-large.jpg" alt="Beef Stroganoff Dish 1">
+                <img src="Media/beef-stroganoff-13205-1.jpeg" alt="Beef Stroganoff Dish 2">
+                <img src="Media/Beef-Stroganoff_8-.jpg" alt="Beef Stroganoff Dish 3">
+                <img src="Media/BEEF-STROGANOFF.jpg" alt="Beef Stroganoff Dish 4">
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <br>
+            <p>© 2024 Chad Clifton. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
