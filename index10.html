@@ -270,7 +270,7 @@ footer {
     <header>
         <div class="logo-wrapper">
             <div class="logo-container">
-                <div class="plate"></div>
+                <div class="plate" aria-hidden="true"></div>
                 <div class="text main-text">Beef Stroganoff</div>
                 <div class="text subtitle">Enthusiast's</div>
             </div>
@@ -285,7 +285,7 @@ footer {
             </ul>
         </nav>
     </header>
-    <div class="content">
+    <main class="content">
         <section id="about">
             <h2>About Us</h2>
             <p>Welcome to the Beef Stroganoff Enthusiast's page! We're passionate about all things Stroganoff and love sharing our recipes, tips, and experiences with fellow enthusiasts. Our community celebrates the rich history and delicious variations of this classic dish.</p>
@@ -315,25 +315,35 @@ footer {
         <section id="images">
             <h2>Image Gallery</h2>
             <div class="image-gallery">
-                <img src="Media/1307-beefstrog-large.jpg" alt="Beef Stroganoff Dish 1">
-                <img src="Media/beef-stroganoff-13205-1.jpeg" alt="Beef Stroganoff Dish 2">
-                <img src="Media/Beef-Stroganoff_8-.jpg" alt="Beef Stroganoff Dish 3">
-                <img src="Media/BEEF-STROGANOFF.jpg" alt="Beef Stroganoff Dish 4">
+                <img src="Media/1307-beefstrog-large.jpg" alt="Plate of Beef Stroganoff with creamy sauce and noodles">
+                <img src="Media/beef-stroganoff-13205-1.jpeg" alt="Close-up of Beef Stroganoff with mushrooms and parsley garnish">
+                <img src="Media/Beef-Stroganoff_8-.jpg" alt="Beef Stroganoff served in a white bowl with a side of bread">
+                <img src="Media/BEEF-STROGANOFF.jpg" alt="Rustic presentation of Beef Stroganoff with sour cream on top">
             </div>
         </section>
         <section id="contact">
             <h2>Contact Us</h2>
             <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="4" required></textarea>
-                <button type="submit">Send Message</button>
+                <div>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Send Message</button>
+                </div>
             </form>
         </section>
-    </div>
+    </main>
     <footer>
         <div class="footer-content">
-            <br>
             <p>© 2024 Chad Clifton. All rights reserved.</p>
         </div>
     </footer>

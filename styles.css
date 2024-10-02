@@ -148,17 +148,33 @@ h2 {
     border-radius: 5px;
 }
 
+/* Form styles */
 form {
-    display: flex ;
+    display: flex;
     flex-direction: column;
 }
 
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
 input, textarea {
+    width: 100%; /* Ensure full width of the container */
     resize: none;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Keep the original margin */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #4A90E2;
+    outline-offset: 2px;
 }
 
 button {
@@ -168,10 +184,15 @@ button {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    align-self: flex-start; /* Align button to the start of the flex container */
 }
 
-button:hover {
+button:hover,
+button:focus {
     background-color: #28A89D;
+    outline: 2px solid #4A90E2;
+    outline-offset: 2px;
 }
 
 /* Media queries for responsiveness */
