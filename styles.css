@@ -73,7 +73,7 @@ body, html {
 
 /* Navigation styles */
 nav {
-    background-color: #b71de6;
+    background-color: blue;
     padding: 10px 0;
     text-align: center;
 }
@@ -136,11 +136,12 @@ h2 {
 }
 
 form {
-    display: flex;
+    display: flex ;
     flex-direction: column;
 }
 
 input, textarea {
+    resize: none;
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -225,14 +226,6 @@ button:hover {
     .subtitle {
         font-size: 12px;
         top: 40px;
-    }
-
-    .noodle {
-        width: 250px;
-    }
-
-    .fork {
-        display: none;
     }
 }
 /* Footer styles */
